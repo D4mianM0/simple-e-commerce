@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothify</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!--Overlay es para cuando aprietas en el carrito, será la pantalla oscura detrás-->
+    <div class="overlay">
+        <div class="overlay__content">
+            <div class="carrito__vacio">
+                <h3>Aún no tienes nada en el carrito<br> :( </h3>
+            </div>
+    
+            <div class="carrito_lleno">
+                <div class="productosen__carrito">
+                    <ul id="carrito-lista"> <!-- Agregamos una lista para mostrar los productos en el carrito -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <header id="header" class="header">
+
+        <div class="container">
+
+            <div class="header__wrap">
+                <div class="header__logo">
+                    <h1 class="logo">Clothify!</h1>
+                </div>
+
+                <nav class="header__nav">
+                    <ul class="nav__container">
+                        <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+                        <li class="nav__item"><a href="#acerca" class="nav__link">Acerca de</a></li>
+                        <li class="nav__item"><a href="todos los productos" class="nav__link">Productos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main" class="main">
+
+        <section class="hero">
+            <div class="container">
+
+                <div class="hero__wrap">
+                    <div class="hero__text">
+                        <h2 class="heading">Compra tu ropa ya en Clothify!</h2>
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam eum autem
+                            odio neque? Aut nobis
+                        </p>
+                        <a href="" class="hero__button">Compra ya!</a>
+                    </div>
+
+                    <div class="hero__img">
+                        <img src="img/hero__shop.svg" alt="Compra ya en Clothify!">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="acerca">
+
+            <div class="container">
+
+                <div class="acerca__wrap">
+
+                    <div class="acerca__img">
+                        <img src="img/acerca__de.svg" alt="Acerca de nosotros">
+                    </div>
+
+                    <div class="acerca__text">
+                        <h3 class="heading">Acerca de</h3>
+                        <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aut eveniet
+                            vitae provident, neque
+                            repudiandae exercitationem con</p>
+                    </div>
+
+                    <div class="acerca__img2">
+                        <img src="img/acerca__de.svg" alt="Acerca de nosotros">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="productos">
+
+            <div class="container">
+
+                <div class="productos__wrap">
+                    <div class="productos__text">
+                        <h2 class="heading">Nuestros Productos</h2>
+                    </div>
+                    
+                <div class="contenido-producto">
+                    <div id="productos" class="procuctos__slider">
+                    </div>
+                </div>
+                        <a href="" class="hero__button">Ver más</a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        </div>
+
+
+    </main>
+
+    <div class="carrito">
+
+        <div class="container">
+
+            <div class="acerca__wrap">
+
+                <div class="contador">
+                    <h6 class="contador__carrito">0</h6>
+                </div>
+
+                <div class="cart">
+                    <i id="cart" class='bx bxs-cart'></i>
+                </div>
+                <div class="carrito-contenido">
+                    <ul id="carrito-lista"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer" class="footer">
+        <div class="container">
+
+            <div class="footer__wrap">
+
+                <nav class="footer__nav">
+                    <ul class="footer__container">
+                        <li class="footer__item"><a href="#" class="footer__link">Inicio</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Acerca de</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Productos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__copy">
+                    <p class="copy"><a href="https://damianmoyanoportfolio.000webhostapp.com/" target="_blank"
+                            class="portfolio">&copy; 2023, Damian Moyano</a></p>
+                </div>
+
+                <ul class="footer__container">
+                    <li class="footer__spam"><a href="https://www.linkedin.com/in/damianm0/" target="_blank"><i
+                                class='bx bxl-linkedin-square'></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/productos.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>
